@@ -54,7 +54,7 @@ Your finished project must include all of the following requirements (further in
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics.
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
-   Sessions do not encrypt cookies where JWT has encrypted cookies. Sessions are stateless and JWTs are statefull.
+   Sessions do not encrypt cookies where JWT has encrypted cookies. JWTs are stateless and Sessions are statefull.
 2. What does `bcryptjs` do to help us store passwords in a secure manner?
    Bcrypt allows us to hash passwords to ensure we are protecting them as securely as possible. It is an algorithm that hashes the infomation multiple times making it harder for a hacker.
 3. How are unit tests different from integration and end-to-end testing?
