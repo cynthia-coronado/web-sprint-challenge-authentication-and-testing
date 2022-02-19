@@ -19,7 +19,7 @@ describe('[POST] /register', () => {
     expect(res.body).toMatchObject({message: 'username and password required'})
   })
   test('responds with error when no password', async () => {
-    const res = await (await request(server).post('/api/auth/register')).send({
+    const res = await request(server).post('/api/auth/register').send({
       username: 'buzz',
       password: ''
     })
@@ -29,14 +29,14 @@ describe('[POST] /register', () => {
 
 describe('[POST] /login', () => {
   test('responds with error when no username', async () => {
-    const res = await (await request(server).post('/login')).send({
+    const res = await request(server).post('/login').send({
       username: '',
       password: 'foobar'
     })
     expect(res.status).toBe(404)
   })
   test('responds with error when no password', async () => {
-    const res = await (await request(server).post('/api/auth/login')).send({
+    const res = await request(server).post('/api/auth/login').send({
       username: 'buzz',
       password: '',
     })
