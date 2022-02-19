@@ -6,7 +6,7 @@ function find() {
 
 function findById(id){
     return db('users')
-        .were('id', id)
+        .where('id', id)
         .first()
 }
 
